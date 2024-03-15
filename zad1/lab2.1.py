@@ -27,7 +27,7 @@ def sort_books(books):
 
 
 # Укажите путь к файлу с названиями книг
-input_file_path = "books.txt"
+input_file_path = "unsorted_books.txt"
 output_file_path = "sorted_books.txt"
 
 books = []
@@ -40,7 +40,7 @@ with open(input_file_path, 'r', encoding='utf-8') as file:
 sorted_books = sort_books(books)
 
 # Вывод отсортированных названий книг
-print("Отсортированные названия книг:")
+print("Отсортированные книги:")
 for _ in range(0, len(sorted_books)):
     book = sorted_books.pop_last()
     print(book)
