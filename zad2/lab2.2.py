@@ -18,7 +18,7 @@ def decrypt_message(msg, deck):
 
 
 def main():
-    filename = "crypt_words.txt"
+    filename = "crypt_word.txt"
     with open(filename, 'r') as file:
         encrypted_msg = file.read()
     deck = Dequeue()
@@ -31,7 +31,7 @@ def main():
     print("Расшифрованное сообщение:")
     print(decrypted_msg)
     
-    with open("decrypted_words.txt", 'w') as file:
+    with open("decrypted_word.txt", 'w') as file:
         file.write(decrypted_msg)
 
 
